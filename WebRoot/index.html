@@ -1,0 +1,92 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>简单个人图书管理系统</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- <link href="static/css/adminStyle.css" rel="stylesheet" type="text/css" /> -->
+<link rel="stylesheet" type="text/css" href="static/css/jquery.dialogbox.css">
+
+
+<title>简单个人图书管理系统</title>
+<script src="static/js/jquery-3.2.1.min.js"></script>
+<script src="static/js/index.js"></script>
+<script src="static/js/jquery.dialogBox.js"></script>
+
+<style>
+body {
+	margin: 0;
+	font-family: 微软雅黑;
+	background-image: url(static/images/.jpg);
+	background-repeat: no-repea;
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: #DDDDDD
+}
+
+a {
+	color: #3d3d3d;
+	text-decoration: none;
+}
+
+/* * { */
+/*     font-size: 14px; */
+/*     font-family: 'microsoft yahei'; */
+/* } */
+
+.title {
+	float: left;
+	margin: -32px 20px;
+	font-size: 40px;
+	color: #FFFFFF;
+	font-height: 75px;
+	font-family: 隶书;
+}
+
+.top2 {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	height: 77px;
+	text-align: center;
+	color: #ccffff;
+	background-color: #888888
+}
+
+#content {
+	position: absolute;
+	top: 77px;
+	width: 100%;
+	text-align: center;
+}
+
+.fr{float:right;}
+
+.top-link{height:75px;line-height:75px;}
+.top-link a{display:inline-block;margin:0 0 0 8px;padding:0 10px;color:#fff;cursor:pointer;}
+.top-link a:hover{color:#d6d6d6;}
+.top-link a i{width:25px;height:25px;display:inline-block;position:relative;top:8px;}
+.top-link a span{text-shadow:2px 2px 2px #333;}
+.top-link a .shopLinkIcon{background:url('static/images/admin_bg.png') -5px -9px;}
+.top-link a .adminIcon{background:url('static/images/admin_bg.png') -37px -9px;}
+.top-link a .clearIcon{background:url('static/images/admin_bg.png') -70px -9px;}
+.top-link a .revisepwdIcon{background:url('static/images/admin_bg.png') -104px -9px;}
+.top-link a .quitIcon{background:url('static/images/admin_bg.png') -135px -6px;}
+</style>
+</head>
+<body>
+	<div class="top2">
+		<div class="title" >
+			<h3>简单个人图书管理系统</h3>
+		</div>
+		<div class="fr top-link">
+			<a href="javascript:void(0)" id="user"></a>
+		</div>
+	</div>
+
+	<div id="content">
+		<div id="btn-dialogBox"></div>
+	</div>
+
+</body>
+</html>

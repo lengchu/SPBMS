@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Head -->
+<head>
+
+	<title>登录表单</title>
+
+	<!-- Meta-Tags -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<script type="application/x-javascript"> 
+
+		addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); 
+		function hideURLbar(){ window.scrollTo(0,1); } 
+
+			
+		</script>
+	<!-- //Meta-Tags -->
+	
+	<!-- Style --> <link rel="stylesheet" href="static/css/login.css" type="text/css" media="all">
+
+	<script src="static/js/jquery-3.2.1.min.js"></script>
+	<script src="static/js/user.js"></script>
+
+</head>
+<!-- //Head -->
+
+<!-- Body -->
+<body>
+
+	<h1>登录表单</h1>
+
+	<div class="container w3layouts agileits" id="container">
+
+		<div class="login w3layouts agileits">
+			<h2>登 录</h2>
+			<form action="UserServlet?action=login" id="login" method="post">
+				<input type="text" Name="username" placeholder="用户名" required="">
+				<input type="password" Name="password" placeholder="密码" required="">
+			<div class="send-button w3layouts agileits">
+				<input type="submit" onclick="login()" value="登 录">
+			</div>
+			</form>
+			<br><br>
+			<div class="clear"></div>
+		</div>
+		
+
+		<div class="register w3layouts agileits">
+			<h2>注 册</h2>
+			<form action="UserServlet?action=reg" id="reg" method="post">
+				<input type="text" Name="username" placeholder="用户名" required="">
+				<input type="text" Name="email" placeholder="邮箱" required="">
+				<input type="password" Name="password" placeholder="密码" required="">
+				<div class="send-button w3layouts agileits">
+					<input type="submit" onclick="reg()" value="免费注册">
+				</div>
+			</form>
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear"></div>
+
+	</div>
+
+	<div class="footer w3layouts agileits">
+		<p>Copyright &copy; More Templates</p>
+	</div>
+	
+	<script>
+		
+	</script>
+
+</body>
+<!-- //Body -->
+
+</html>
